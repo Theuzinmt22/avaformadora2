@@ -1,0 +1,158 @@
+<h2 class="text-center mt-2 mb-2">Calculadora Angular</h2>
+
+<div class="calculadora container p-4 rounded shadow-sm mb-4">
+  <input
+    type="text"
+    [value]="tela"
+    readonly
+    class="form-control text-right mb-3 shadow-sm text"
+  />
+
+  <div class="row">
+    <div class="col-3">
+      <button class="btn btn-danger py-3 w-100" (click)="calculadoraLimpar()">
+        C
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('/')"
+      >
+        /
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('*')"
+      >
+        *
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('-')"
+      >
+        -
+      </button>
+    </div>
+  </div>
+
+  <div class="row mt-1">
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('7')"
+      >
+        7
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('8')"
+      >
+        8
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('9')"
+      >
+        9
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('+')"
+      >
+        +
+      </button>
+    </div>
+  </div>
+
+  <div class="row mt-1">
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('4')"
+      >
+        4
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('5')"
+      >
+        5
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('6')"
+      >
+        6
+      </button>
+    </div>
+  </div>
+
+  <div class="row mt-1">
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('1')"
+      >
+        1
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('2')"
+      >
+        2
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('3')"
+      >
+        3
+      </button>
+    </div>
+  </div>
+
+  <div class="row mt-1">
+    <div class="col-6">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('0')"
+      >
+        0
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-secondary py-3 w-100"
+        (click)="calculadoraInput('.')"
+      >
+        .
+      </button>
+    </div>
+    <div class="col-3">
+      <button
+        class="btn btn-primary py-3 w-100"
+        (click)="calculadoraResultado()"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
